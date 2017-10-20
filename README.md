@@ -1,10 +1,12 @@
-# Hexagonal Reversi (C#)
-My final project for my 5 points SE Bagrut.[br]
-You can use the code for any purpose you wish.[br]
-/* אם אתה הולך להשתמש בפרויקט הזה בשביל לרמות בפרויקט שלך זו אשמתך בלבד */[br]
+# Hexagonal Reversi (C#)  
+My final project for my 5 points SE Bagrut.   
+You can use the code for any purpose you wish.  
+/* אם אתה הולך להשתמש בפרויקט הזה בשביל לרמות בפרויקט שלך זו אשמתך בלבד */  
 
-## Images files[br]
-(Yellow~Gold) Cursor Credit:[br]
-Icon made by Freepik from www.flaticon.com [br]
-* * * * * *[br]
-The other images in this project is edited by myself.[br]
+## Images files  
+(Yellow~Gold) Cursor Credit:  
+Icon made by Freepik from www.flaticon.com  
+http://www.freepik.com/  
+  
+* * * * * *  
+The other images in this project is edited by myself.  
