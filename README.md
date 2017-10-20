@@ -5,9 +5,7 @@ You can use the code for any purpose you wish.
 /* אם אתה הולך להשתמש בפרויקט הזה בשביל לרמות בפרויקט שלך זו אשמתך בלבד */  
 
 ## Images files  
-Cursor Credit(GoldCursor.ico):  
-Icon made by Freepik from www.flaticon.com  
-http://www.freepik.com/  
+All images in this project is edited by myself.  
   
-* * * * * *  
-The other images in this project is edited by myself.  
+## Sounds  
+waterdrop.wav is not really a working audio file, I don't want to copyright infringement.
