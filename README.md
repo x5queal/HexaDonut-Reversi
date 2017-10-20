@@ -4,7 +4,7 @@ You can use the code for any purpose you wish.
 /* אם אתה הולך להשתמש בפרויקט הזה בשביל לרמות בפרויקט שלך זו אשמתך בלבד */  
 
 ## Images files  
-(Yellow~Gold) Cursor Credit:  
+Cursor Credit(GoldCursor.ico):  
 Icon made by Freepik from www.flaticon.com  
 http://www.freepik.com/  
   
