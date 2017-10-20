@@ -23,7 +23,6 @@ namespace Hexagon_Reversi
             this.option = option;
             InitializeComponent();
             button2.Enabled = false;
-            this.Cursor = new Cursor("..\\..\\Images\\GoldCursor.ico");
         }
         // Button to start the game - build the graphic board
         private void button1_Click_1(object sender, EventArgs e)
