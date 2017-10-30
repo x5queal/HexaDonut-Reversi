@@ -27,7 +27,7 @@ namespace Hexagon_Reversi
 
             return move.SelectedIndex;
         }
-        // פונקציית ההערכה של המשחק - מספר מהלכים ליריב חלקי ציון של מיקום בלוח
+        // Evaluate funtion of the game - (the number of availbe enemy moves) / (value of the current board index)
         private static int Iterate(AlphaBetaBoard node, int depth, int alpha, int beta)
         {
             if (depth == 0 || node.CheckWin(node.SelectedIndex.X, node.SelectedIndex.Y) != -10)
