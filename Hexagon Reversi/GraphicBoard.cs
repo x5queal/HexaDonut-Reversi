@@ -11,12 +11,12 @@ using System.Media;
 
 namespace Hexagon_Reversi
 {
-    // המחלקה אחראית לשינויים הגרפיים המתבצעים במשחק
+    // The graphic class - update the visual part
     public partial class GraphicBoard : Form
     {
-        private LogicBoard        lb;        // עצם של הלוח הלוגי בשביל מימוש החוקים
-        private PictureBoxItem[,] colors;    // התמונה של צבע השחקן - כחול, ירוק או ריק
-        private bool              option;    // בדיקת מצב המשחק
+        private LogicBoard        lb;        // Logicboard Object - 
+        private PictureBoxItem[,] colors;    // Image of the player color - cyan or purple
+        private bool              option;    // Game mode: Player VS CPU or Player VS Player
 
         public GraphicBoard(bool option)
         {
@@ -53,12 +53,12 @@ namespace Hexagon_Reversi
         {
             Application.Restart();
         }
-        // הפעולה מחזירה את עצם הלוח הלוגי של המחלקה
+        // The function return the Logicboard object
         public LogicBoard GetLogicBoard()
         {
             return lb;
         }
-        // הפעולה אחראית לתגובת התוכנית ללחיצת המשתמש
+        // The function summoned when the user click on a board cell
         private void HexClick(object sender, EventArgs n)
         {
             PictureBoxItem color = (PictureBoxItem)sender;
@@ -136,7 +136,7 @@ namespace Hexagon_Reversi
 
 
         }
-        // הפעולה אחראית לביצוע מהלך המחשב
+        // The function do the CPU move
         public void PlayComputerTurn()
         {
             if (lb.GetPlayer() == -1)
@@ -168,7 +168,7 @@ namespace Hexagon_Reversi
                 NumberOfPurple.Text = "" + lb.GetCount(-1);
             }
         }
-        // הפעולה מעדכנת את השינויים הגרפיים
+        // Update grpahic changes
         private void UpdateColors(int x, int y)
         {
             UpdateDirection(x, y, 0, -1);
@@ -178,7 +178,6 @@ namespace Hexagon_Reversi
             UpdateDirection(x, y, -1, 1);
             UpdateDirection(x, y, -1, 0);
         }
-        // פעולת עזרת לפעולה הנ"ל
         private void UpdateDirection(int x, int y, int dn1, int dn2)
         {
             x += dn1;
