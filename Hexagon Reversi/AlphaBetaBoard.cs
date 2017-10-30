@@ -79,10 +79,6 @@ namespace Hexagon_Reversi
             List<AlphaBetaBoard> lst = new List<AlphaBetaBoard>();
             for (int i = 0; i < 9; i++)
                 for (int j = 0; j < 9; j++)
-
-                    // לא צריך את השורה הזו?
-                   // if (i + j > 3 && i + j < 13 && (i != 4 || j != 4)) 
-                   //הוספתי את התנאי הראשון ושיניתי במחלקת לוגיק
                     if (this.DoesInBoard(i,j) && this.CheckMove(i,j)) {
                         AlphaBetaBoard son = new AlphaBetaBoard(this);
                         son.DoMove(i, j);
@@ -101,8 +97,6 @@ namespace Hexagon_Reversi
             this.val = (int)(Math.Round(val)) * this.parent.GetPlayer();
             
         }
-
-        // כמה מהלכים יש ליריב. לבדוק אם באמת הוא השחקן עכשיו
         public int CountOppMoves()
         {
             int count = 0;
