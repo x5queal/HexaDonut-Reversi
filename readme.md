@@ -8,7 +8,8 @@ The game is written in C#, I used Visual Studio & Windows Forms to create a big 
   
 License: MIT (read license.txt)
 
-# Hexagonal Reversi (C#)  
+# Hexagonal Reversi 
+The goal is to end the game with the most donuts in your color.  
 ![GameGif](https://i.imgur.com/id7I1OD.gif)     
   
 *זה הפרויקט הסופי שלי עם טיפה שינויים לחמש יחידות הבגרות בהנדסת תוכנה - אם את/ה מתכוונ/ת להשתמש בפרויקט זה בשביל לרמות בפרויקט שלך זו אשמתך בלבד*  
@@ -20,4 +21,4 @@ All images in this project is edited by myself.
 waterdrop.wav is not really a working audio file, I don't want to copyright infringement.
 
 # To-do  
-Fix and add comments (need to translate them to English)
+Fix and add comments (need to translate them to English).
