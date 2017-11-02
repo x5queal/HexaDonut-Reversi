@@ -13,7 +13,7 @@ namespace Hexagon_Reversi
         private int depth;
         private int val;
         private Index selectedIndex;
-
+        // Matrix with number in every index that represent how much the board cell is important 
         static int[,] posValue = {  {0,0,0,0,9,2,6,2,9},
                                     {0,0,0,2,1,2,2,1,2},
                                     {0,0,6,2,4,3,4,2,6},
