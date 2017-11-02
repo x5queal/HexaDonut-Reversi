@@ -19,5 +19,5 @@ All images in this project is edited by myself.
 # Sounds  
 waterdrop.wav is not really a working audio file, I don't want to copyright infringement.
 
-# To do  
+# To-do  
 Fix and add comments (need to translate them to English)
