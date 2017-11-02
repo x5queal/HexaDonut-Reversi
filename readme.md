@@ -8,8 +8,8 @@ License: MIT (read license.txt)
 
 # Hexagonal Reversi (C#)  
 ![GameGif](https://i.imgur.com/id7I1OD.gif)     
-// חמש יחידות הבגרות שלי בהנדסת תוכנה
-// אם את/ה מתכוונ/ת להשתמש בפרויקט הזה בשביל לרמות בדרך כלשהי בפרויקט שלך זו אשמתך בלבד
+  
+/*זה הפרויקט הסופי שלי עם טיפה שינויים לחמש יחידות הבגרות בהנדסת תוכנה - אם את/ה מתכוונ/ת להשתמש בפרויקט זה בשביל לרמות בפרויקט שלך זו אשמתך בלבד*/  
   
 ## Images files  
 All images in this project is edited by myself.  
