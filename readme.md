@@ -10,6 +10,7 @@ License: MIT (read license.txt)
 
 # Hexagonal Reversi 
 The goal is to end the game with the most donuts in your color.  
+  
 ![GameGif](https://i.imgur.com/id7I1OD.gif)     
   
 *זה הפרויקט הסופי שלי עם טיפה שינויים לחמש יחידות הבגרות בהנדסת תוכנה - אם את/ה מתכוונ/ת להשתמש בפרויקט זה בשביל לרמות בפרויקט שלך זו אשמתך בלבד*  
