@@ -6,7 +6,7 @@ The AI is based on:
   
 The game is written in C#, I used Visual Studio & Windows Forms to create a big part of the graphic interface.  
   
-License: MIT (read license.txt)
+License: MIT (read [license.txt](https://github.com/x5queal/HexaDonut-Reversi-C-Sharp/blob/master/license.txt))
 
 # Hexagonal Reversi 
 The goal is to end the game with the most donuts in your color.  
