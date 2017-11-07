@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,24 +6,14 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
-    /*
-         _   _                                        _     _____                          
-        | | | |                                      | |   | ___ \                      (*)
-        | |_| | _____  ____ _  __ _  ___  _ __   __ _| |   | |_/ /_____   _____ _ __ ___ _ 
-        |  _  |/ _ \ \/ / _` |/ _` |/ _ \| '_ \ / _` | | _ |    // _ \ \ / / _ \ '__/ __| |
-        | | | |  __/>  < (_| | (_| | (_) | | | | (_| | |   | |\ \  __/\ V /  __/ |  \__ \ |
-        \_| |_/\___/_/\_\__,_|\__, |\___/|_| |_|\__,_|_|   \_| \_\___| \_/ \___|_|  |___/_|
-                               __/ |                                                     
-                              |___/                                                      
-    */
     public class LogicBoard
     {
-        protected int[,]      board;        // מערך דו-ממדי שישמש כלוח המשחק
-        protected int         player;       // ערך השחקן - אחד או מינוס אחד 
-        protected int         countPlayer;  // מונה לספירת הכלים של השחקן
-        protected int         countOpp;     // מונה לספירת הכלים של המחשב
+        protected int[,]      board;        // Board of the game 
+        protected int         player;       // Player value - 1 / 0 
+        protected int         countPlayer;  // Counter for the player donuts
+        protected int         countOpp;     // Counter for the AI donuts
 
-        // הפעולה הבונה - לוח עם נקודת ההתחלה של השחקנים
+        // Constructor - build the board and place the donuts in the start position
         public LogicBoard()
         {
             player = 1;
@@ -45,28 +35,28 @@ namespace Hexagon_Reversi
             board[4, 4] = -10;
             countPlayer = 4;
             countOpp = 4;
-        }
-        // הפעולה מחזירה את צבע השחקן \ התור
+        }   
+        // Return the player value
         public int GetPlayer()
         {
             return player;
         }
-        // הפעולה קובעת את ערך השחקן
+        // Set the player value
         public void SetPlayer(int player)
         {
             this.player = player;
         }
-        // הפעולה מחזירה את הלוח
+        // Return the board
         public int[,] GetBoard()
         {
             return board;
         }
-        // הפעולה מחזירה את הלוח
+        // Set value for the index of the board
         public void SetBoard(int x, int y, int color)
         {
             this.board[x, y] = color;
         }
-        // הפעולה בודקת האם המהלך הנוכחי חוקי
+        // Check if the current move is legal (using the CheckDirection function)
         public bool CheckMove(int x, int y)
         {
             int[] direction = { -1, 0, 1 };
@@ -76,7 +66,7 @@ namespace Hexagon_Reversi
             return false;
 
         }
-        // פעולת עזר לפעולת בדיקת המהלך
+        // Check if the given direction is legal for the current move
         public bool CheckDirection(int x, int y, int dn1, int dn2)
         {
             bool flag = false;
@@ -92,10 +82,10 @@ namespace Hexagon_Reversi
             }
             return flag;
         }
-        // הפעולה אחראית לביצוע המהלך, שינוי שחקנים בהתאם כולל אכילה
+        // Change the index, donuts values, counters
         public void DoMove(int x, int y)
         {
-            int count = 0; // מונה לספירת הנהפכים
+            int count = 0;  
 
             int tempX, tempY;
             for (int i = -1; i < 2; i++)
@@ -109,7 +99,7 @@ namespace Hexagon_Reversi
                             this.board[tempX, tempY] = player;
                             tempX += i;
                             tempY += j;
-                            if (player == 1) // עדכון מספר כלי השחקן של השחקן והמחשב
+                            if (player == 1)
                             {
                                 countPlayer++;
                                 countOpp--;
@@ -138,7 +128,7 @@ namespace Hexagon_Reversi
             if (player == 1) return countPlayer;
             else return countOpp;
         }
-        // הפעולה בודקת שאין חריגה מהמערך
+        // Check if the index is in the game board
         public bool DoesInBoard(int x, int y)
         {
             if (x >= 0 && x < 9 && y >= 0 && y < 9 && this.board[x, y] != -10
@@ -146,6 +136,7 @@ namespace Hexagon_Reversi
                 return true;
             return false;
         }
+        // Check if the current player have legal moves
         public bool DoesHaveMoves(int x, int y)
         {
             for (int i = 0; i < board.GetLength(0); i++)
@@ -156,7 +147,7 @@ namespace Hexagon_Reversi
                 }
             return false;
         }
-        // הפעולה בודקת האם לא נותרו מהלכים במשחק
+        // Check if there's legal moves in both sides
         public bool NoMovesAtAll(int x, int y)
         {
             if (!DoesHaveMoves(x, y))
@@ -171,17 +162,17 @@ namespace Hexagon_Reversi
             }
             return false;
         }
-        // הפעולה בודקת האם יש ניצחון
+        // Check if there's win / tie
         public int CheckWin(int x, int y)   
-        { // אחד = כחול מנצח ; מינוס אחד = סגול מנצח ; מינוס עשר = אין ניצחון ; אפס = תיקו
+        { 
             if (NoMovesAtAll(x, y))
             {
                 if (countPlayer > countOpp)
-                    return 1;
+                    return 1;   // Blue win
                 if (countPlayer < countOpp)
-                    return -1;
+                    return -1;  // Purple win
                 if (countPlayer == countOpp)
-                    return 0;
+                    return 0;   // Tie
             }
             return -10;
         }
