@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
-    // המחלקה אחראית על ניהול תמונות המשחק
+    // The class store the images file names
     public static class Images
     {
         private static string begStr = "..\\..\\Images\\";
@@ -15,7 +15,7 @@ namespace Hexagon_Reversi
         private static string purple = "Purple Donut";
         private static string empty = "Empty";
 
-        // הפעולה תחזיר את התמונה המתאימה
+        // Return the right filename | 1 = Blue Donut | -1 = Purple Donut | 0 = Empty  
         public static string GetPicture(int color)
         {
             string str = begStr;
