@@ -1,25 +1,21 @@
-# Information  
+# HexaDonut Reversi 
 The board game [Reversi](https://en.wikipedia.org/wiki/Reversi) on a hexagonal board with option to play against low-AI or another local player.  
+The player with the most pieces on the board at the end of the game wins    
+  
+![GameGif](https://i.imgur.com/id7I1OD.gif)       
+  
+# Build with  
+[Visual Studio](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) - The IDE used  
+[Windows Forms](https://en.wikipedia.org/wiki/Windows_Forms) - Used for graphical interface
+  
+# Knowledge 
 The AI is based on:  
 [Minimax](https://en.wikipedia.org/wiki/Minimax)  
 [Alpha–beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning)  
   
-The game is written in C#, I used Visual Studio & Windows Forms to create a big part of the graphic interface.  
-  
-License: MIT (read [license.txt](https://github.com/x5queal/HexaDonut-Reversi-C-Sharp/blob/master/license.txt))
-
-# Hexagonal Reversi 
-The goal is to end the game with the most donuts in your color.  
-  
-![GameGif](https://i.imgur.com/id7I1OD.gif)     
-  
-*זה הפרויקט הסופי שלי עם טיפה שינויים לחמש יחידות הבגרות בהנדסת תוכנה - אם את/ה מתכוונ/ת להשתמש בפרויקט זה בשביל לרמות בפרויקט שלך זו אשמתך בלבד*  
-  
-# Images files  
-All images in this project is edited by myself.  
-  
-# Sounds  
-waterdrop.wav is not really a working audio file, I don't want to copyright infringement.
+# License 
+This project is licensed under the MIT License, please read [license.txt](https://github.com/x5queal/HexaDonut-Reversi/blob/master/license.txt) for more information  
 
 # To-do  
-Fix and add comments (need to translate them to English).
+Add % translate comments to the code  
+Add setup file & installing info  
