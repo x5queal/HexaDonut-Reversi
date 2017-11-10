@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
-    // The class store the images file names
+    // The class store and manage the images file names
     public static class Images
     {
         private static string begStr = "..\\..\\Images\\";
