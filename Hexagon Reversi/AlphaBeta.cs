@@ -28,7 +28,7 @@ namespace Hexagon_Reversi
 
             return move.SelectedIndex;
         }
-        // Evaluate funtion of the game - (the number of availbe enemy moves) / (value of the current board index)
+        // Call evaluate funtion if depth = 0 or if someone win
         private static int Iterate(AlphaBetaBoard node, int depth, int alpha, int beta)
         {
             if (depth == 0 || node.CheckWin(node.SelectedIndex.X, node.SelectedIndex.Y) != -10)
@@ -42,7 +42,7 @@ namespace Hexagon_Reversi
                 {
                     alpha = Math.Max(alpha, Iterate(child, depth - 1, alpha, beta));
                     if (beta < alpha)
-                        break;
+                        break;  // Alpha Beta Pruning
                 }
                 return alpha;
             }
@@ -52,7 +52,7 @@ namespace Hexagon_Reversi
                 {
                     beta = Math.Min(beta, Iterate(child, depth - 1, alpha, beta));
                     if (beta < alpha)
-                        break;
+                        break; // Alpha Beta Pruning
                 }
                 return beta;
             }
