@@ -6,26 +6,24 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
-    // המחלקה אחראית למיקום הלוח הנוכחי של המחשב
+    // The class store and manage the CPU current index on the board
     public class Index
     {
         private int x;
         private int y;
 
-        // פעולה בונה
+        // Constructor
         public Index(int x, int y)
         {
             this.x = x;
             this.y = y;
         }
-
-        // גט וסט של איקס
+        // Gets & Sets
         public int X
         {
             get { return x; }
             set { x = value; }
         }
-        // גט וסט של ויי
         public int Y
         {
             get { return y; }
