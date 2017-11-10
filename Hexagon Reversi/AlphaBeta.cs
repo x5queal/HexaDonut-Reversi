@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
+    // The static class store the BestMove & Iterate functions
     public static class AlphaBeta
     {
         const int MAXPLAYER = -1;
