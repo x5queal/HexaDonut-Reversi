@@ -189,6 +189,7 @@ namespace Hexagon_Reversi
                 y += dn2;
             }
         }
+        // Play audio then the player do a move (require a working 'waterdrop.wav' file)
         private void PlayWaterDropSound()
         {
             SoundPlayer wd = new SoundPlayer(@"..\\..\\Sounds\\waterdrop.wav");
