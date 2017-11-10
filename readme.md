@@ -32,6 +32,5 @@ The AI is based on:
 ## License 
 This project is licensed under the MIT License, please read [license.txt](https://github.com/x5queal/HexaDonut-Reversi/blob/master/license.txt) for more information  
 
-## To-do  
-Add % translate comments to the code  
+## Todo  
 Add setup file & installing info  
