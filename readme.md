@@ -1,8 +1,8 @@
-# HexaDonut Reversi 
+# ![HexaDonutReversi](https://i.imgur.com/KxGUizg.png) 
 The board game [Reversi](https://en.wikipedia.org/wiki/Reversi) on a hexagonal board with option to play against low-AI or another local player.  
 The player with the most pieces on the board at the end of the game wins    
   
-![GameMenu](https://i.imgur.com/iGyQGhq.jpg) ![GameGif](https://i.imgur.com/r2vFVbp.gif)  
+![GameGif](https://i.imgur.com/r2vFVbp.gif)  
   
 ## Project Structure  
 **Logical** - represnting values and rules of the game, board and the players:  
