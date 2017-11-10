@@ -10,28 +10,29 @@ using System.Windows.Forms;
 
 namespace Hexagon_Reversi
 {
+    // The start menu - let the user choose game mode (Player VS Player or Player VS CPU)
     public partial class Menu : Form
     {
         private bool pvp;
+        
         public Menu()
         {
             InitializeComponent();
-            this.Cursor = new Cursor("..\\..\\Images\\BestCursor.ico");
         }
 
-        // כפתור שחקן נגד מחשב
+        // Player VS CPU button
         private void button1_Click(object sender, EventArgs e)
         {
             pvp = false;
             this.Close();
         }
-        // כפתור שחקן נגד שחקן
+        // Player VS Player button
         private void button2_Click(object sender, EventArgs e)
         {
             pvp = true;
             this.Close();
         }
-        // פעולת גט
+        // Get
         public bool GetPvP()
         {
             return pvp;
