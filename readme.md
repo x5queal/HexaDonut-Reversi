@@ -2,7 +2,7 @@
 The board game [Reversi](https://en.wikipedia.org/wiki/Reversi) on a hexagonal board with option to play against low-AI or another local player.  
 The player with the most pieces on the board at the end of the game wins    
   
-![GameGif](https://i.imgur.com/id7I1OD.gif)       
+![GameGif](https://i.imgur.com/id7I1OD.gif = 50%)       
   
 ## Project Structure  
 **Logical** - represnting values and rules of the game, board and the players:  
