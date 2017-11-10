@@ -5,19 +5,19 @@ The player with the most pieces on the board at the end of the game wins
 ![GameGif](https://i.imgur.com/id7I1OD.gif)       
   
 ## Project Structure  
-Logical part - represnting values and rules of the game, board and the players:  
-  * LogicBoard.cs -   
-  * Index.cs -  
+**Logical** - represnting values and rules of the game, board and the players:  
+  * LogicBoard.cs - Store variables and functions that represent the game parts and rules  
+  * Index.cs - Store and manage the CPU current index on the board  
   
-Graphical part - store, manage and change images, graphic objects, user interface:
-  * GraphicBoard.cs - 
-  * PictureBoxItem.cs -  
-  * Images.cs -  
-  * Menu.cs -  
+**Graphical** - store, manage and change images, graphic objects, user interface:
+  * GraphicBoard.cs - Update the visual part (images, labels, buttons)  
+  * PictureBoxItem.cs -  Allow use of index as individual (image per index)  
+  * Images.cs - Store and manage the images file names  
+  * Menu.cs -  Let the user choose game mode (Player VS Player or Player VS CPU)  
   
-Artificial Intelligence - CPU moves; choosing the best move according to the possible moves and strategy of the game  
-  * AlphaBeta.cs -  
-  * AlphaBetaBoard.cs -  
+**Artificial Intelligence** - CPU moves; choosing the best move according to the possible moves and strategy of the game  
+  * AlphaBeta.cs - Static class store the BestMove & Iterate functions  
+  * AlphaBetaBoard.cs - Create a tree sturcture of game boards  
 
 ## Build with  
 [Visual Studio](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) - The IDE used  
