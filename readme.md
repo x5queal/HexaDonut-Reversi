@@ -6,18 +6,18 @@ The player with the most pieces on the board at the end of the game wins
   
 ## Project Structure  
 Logical part - represnting values and rules of the board and the players:  
-  *LogicBoard.cs -   
-  *Index.cs -  
+  * LogicBoard.cs -   
+  * Index.cs -  
   
 Graphical part - store, manage and change images, graphic objects, user interface:
-  *GraphicBoard.cs - 
-  *PictureBoxItem.cs -  
-  *Images.cs -  
-  *Menu.cs -  
+  * GraphicBoard.cs - 
+  * PictureBoxItem.cs -  
+  * Images.cs -  
+  * Menu.cs -  
   
 Artificial Intelligence - CPU moves; choosing the best move according to the possible moves and strategy of the game  
-  *AlphaBeta.cs -  
-  *AlphaBetaBoard.cs -  
+  * AlphaBeta.cs -  
+  * AlphaBetaBoard.cs -  
 
 ## Build with  
 [Visual Studio](https://en.wikipedia.org/wiki/Microsoft_Visual_Studio) - The IDE used  
