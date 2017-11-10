@@ -5,7 +5,7 @@ The player with the most pieces on the board at the end of the game wins
 ![GameGif](https://i.imgur.com/id7I1OD.gif)       
   
 ## Project Structure  
-Logical part - represnting values and rules of the board and the players:  
+Logical part - represnting values and rules of the game, board and the players:  
   * LogicBoard.cs -   
   * Index.cs -  
   
