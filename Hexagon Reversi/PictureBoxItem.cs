@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +8,14 @@ using System.Windows.Forms;
 
 namespace Hexagon_Reversi
 {
+    // Inheritance from PictureBox - this class allowing use of index as individual
     class PictureBoxItem : PictureBox
     {
-        private int indexI; // מיקום השחקן - עמודות
-        private int indexJ; // מיקום השחקן - שורות
-        private int color;  // צבע השחקן (1 / -1) כחול או סגול
+        private int indexI; // Player index - columns
+        private int indexJ; // Player index - rows
+        private int color;  // Player color (1 / -1) - Blue / Purple
 
-        // הפעולה קובעת את מיקום התמונות
+        // Constructor - Set the images size, location and type
         public PictureBoxItem(int indexI, int indexJ, int color)
         : base() 
         {
@@ -27,7 +28,7 @@ namespace Hexagon_Reversi
             BackColor = System.Drawing.Color.Transparent;
             SetPicture(color);
         }
-        // הפעולה אחראית לתמונה
+        // Set the correct image
         public void SetPicture(int color)
         {
             this.color = color;
@@ -36,19 +37,17 @@ namespace Hexagon_Reversi
             Image im = Image.FromFile(imgFile);
             Image = new Bitmap(im, 42, 42);
         }
-        // הפעולה מחזירה או קובעת את ערך מיקום השחקן בשורות
+        // Gets & Sets
         public int IndexI
         {
             get { return this.indexI; }
             set { this.indexI = value; }
         }
-        // הפעולה מחזירה או קובעת את ערך מיקום השחקן בעמודות
         public int IndexJ
         {
             get { return this.indexJ; }
             set { this.indexJ = value; }
         }
-        // הפעולה מחזירה את צבע השחקן
         public int GetColor()
         {
             return this.color;
