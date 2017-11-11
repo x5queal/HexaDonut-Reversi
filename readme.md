@@ -1,7 +1,7 @@
 # ![HexaDonutReversi](https://i.imgur.com/KxGUizg.png) 
 The board game [Reversi](https://en.wikipedia.org/wiki/Reversi) on a hexagonal board with option to play against low-AI or another local player.  
-The player with the most pieces on the board at the end of the game wins    
-  
+Like Reversi, try to end up with the most pieces of your color at the end of the game  
+    
 ![GameGif](https://i.imgur.com/r2vFVbp.gif)  
   
 # Project Structure  
