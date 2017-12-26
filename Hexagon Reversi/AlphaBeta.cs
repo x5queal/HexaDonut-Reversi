@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
-    // The static class store the BestMove & Iterate functions
     public static class AlphaBeta
     {
         const int MAXPLAYER = -1;
