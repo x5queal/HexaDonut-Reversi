@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
-    // The class store variables and functions that represent the game parts and rules
     public class LogicBoard
     {
         protected int[,]      board;        // Board of the game 
