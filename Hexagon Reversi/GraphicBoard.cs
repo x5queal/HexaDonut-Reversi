@@ -11,7 +11,6 @@ using System.Media;
 
 namespace Hexagon_Reversi
 {
-    // The graphic class - update the visual part
     public partial class GraphicBoard : Form
     {
         private LogicBoard        lb;        // Logicboard Object - 
