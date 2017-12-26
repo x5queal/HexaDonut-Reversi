@@ -7,7 +7,6 @@ using System.Windows.Forms;
 
 namespace Hexagon_Reversi
 {
-    // The class create a tree sturcture of game boards ; Inheritance from LogicBoard.cs
     public class AlphaBetaBoard : LogicBoard
     {
         private LogicBoard parent;
