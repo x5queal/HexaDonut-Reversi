@@ -13,7 +13,7 @@ namespace Hexagon_Reversi
 {
     public partial class GraphicBoard : Form
     {
-        private LogicBoard        lb;        // Logicboard Object - 
+        private LogicBoard        lb;        // Logicboard Object 
         private PictureBoxItem[,] colors;    // Image of the player color - cyan or purple
         private bool              option;    // Game mode: Player VS CPU or Player VS Player
 
