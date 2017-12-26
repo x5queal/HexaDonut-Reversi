@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Hexagon_Reversi
 {
-    // The class store and manage the CPU current index on the board
     public class Index
     {
         private int x;
